@@ -1,0 +1,241 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+background: linear-gradient(135deg, #0f172a, #1e293b);
+color: white;
+}
+
+.layout {
+display: flex;
+}
+
+/* SIDEBAR */
+.sidebar {
+width: 230px;
+height: 100vh;
+background: rgba(0,0,0,0.5);
+padding: 20px;
+}
+
+.sidebar a {
+display: block;
+color: white;
+text-decoration: none;
+padding: 10px;
+margin-bottom: 10px;
+border-radius: 8px;
+}
+
+.sidebar a:hover,
+.sidebar .active {
+background: #3b82f6;
+}
+
+/* MAIN */
+.main {
+flex: 1;
+padding: 20px;
+}
+
+/* CARDS */
+.cards {
+display: flex;
+gap: 15px;
+}
+
+.card {
+flex: 1;
+background: rgba(255,255,255,0.1);
+padding: 20px;
+border-radius: 15px;
+}
+
+/* TABLE */
+table {
+width: 100%;
+background: rgba(255,255,255,0.1);
+margin-top: 20px;
+border-radius: 10px;
+}
+
+th, td {
+padding: 10px;
+}
+
+/* STATUS */
+.aktif {
+color: #00ffcc;
+}
+
+.expired {
+color: red;
+}
+
+/* DETAIL */
+.detail-card {
+background: rgba(255,255,255,0.1);
+padding: 20px;
+border-radius: 15px;
+width: 300px;
+}
+
+.detail-card img {
+width: 100px;
+border-radius: 50%;
+}
+
+/* TRAINER */
+.trainer-card {
+background: rgba(255,255,255,0.1);
+padding: 20px;
+border-radius: 15px;
+text-align: center;
+width: 250px;
+}
+
+.trainer-card img {
+width: 100px;
+border-radius: 50%;
+}
+
+table {
+width: 100%;
+border-collapse: collapse;
+margin-top: 20px;
+background: rgba(255,255,255,0.08);
+border-radius: 10px;
+overflow: hidden;
+}
+
+th {
+background: rgba(255,255,255,0.15);
+padding: 12px;
+text-align: left;
+}
+
+td {
+padding: 12px;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+tr:hover {
+background: rgba(255,255,255,0.1);
+}
+
+/* FOTO */
+td img {
+width: 45px;
+height: 45px;
+border-radius: 50%;
+object-fit: cover;
+border: 2px solid #00ffcc;
+}
+
+/* LINK NAMA */
+td a {
+color: #00ffcc;
+text-decoration: none;
+font-weight: bold;
+}
+
+td a:hover {
+text-decoration: underline;
+}
+
+.detail-card {
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(15px);
+padding: 25px;
+border-radius: 20px;
+width: 350px;
+margin: auto;
+text-align: center;
+box-shadow: 0 15px 40px rgba(0,0,0,0.5);
+}
+
+.detail-card img {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid #00ffcc;
+margin-bottom: 15px;
+}
+
+.info {
+margin: 10px 0;
+}
+
+.history ul {
+list-style: none;
+padding: 0;
+}
+
+.history li {
+background: rgba(255,255,255,0.1);
+padding: 8px;
+margin: 5px 0;
+border-radius: 8px;
+}
+
+.btn {
+display: inline-block;
+margin-top: 15px;
+padding: 10px 15px;
+background: linear-gradient(45deg, #00ffcc, #00bcd4);
+color: black;
+text-decoration: none;
+border-radius: 10px;
+font-weight: bold;
+}
+
+/* GRID TRAINER */
+.trainer-container {
+display: flex;
+gap: 20px;
+flex-wrap: wrap;
+margin-top: 20px;
+}
+
+/* CARD */
+.trainer-card {
+background: rgba(255,255,255,0.08);
+backdrop-filter: blur(15px);
+padding: 25px;
+border-radius: 20px;
+text-align: center;
+width: 250px;
+box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+transition: 0.3s;
+}
+
+.trainer-card:hover {
+transform: translateY(-8px);
+}
+
+/* FOTO */
+.trainer-card img {
+width: 120px;
+height: 120px;
+border-radius: 50%;
+object-fit: cover;
+border: 3px solid #00ffcc;
+margin-bottom: 10px;
+}
+
+/* ROLE */
+.role {
+color: #00ffcc;
+margin-bottom: 10px;
+}
+
+/* INFO */
+.info {
+font-size: 14px;
+margin-top: 10px;
+}
