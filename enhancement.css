@@ -1,0 +1,167 @@
+:root {
+  --accent: #00ffcc;
+  --accent-2: #00bcd4;
+  --panel: rgba(255,255,255,0.08);
+  --panel-strong: rgba(255,255,255,0.14);
+  --text: #f8fafc;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: linear-gradient(135deg, rgba(0,255,204,0.18), rgba(0,188,212,0.18));
+  padding: 25px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.hero-copy {
+  flex: 1.3;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--accent);
+  font-size: 0.8rem;
+  margin-bottom: 8px;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.btn-primary,
+.btn-secondary,
+#bmiForm button {
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary,
+#bmiForm button {
+  background: linear-gradient(45deg, var(--accent), var(--accent-2));
+  color: #04131d;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.25);
+}
+
+.hero-card,
+.stat-card,
+.panel {
+  background: var(--panel);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.hero-card {
+  min-width: 240px;
+  padding: 20px;
+}
+
+.date-text {
+  color: var(--accent);
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.quote-text {
+  margin-top: 8px;
+  color: #dbeafe;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  padding: 18px;
+  text-align: center;
+}
+
+.stat-card p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-top: 6px;
+  color: var(--accent);
+}
+
+.content-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 20px;
+}
+
+.panel {
+  padding: 20px;
+}
+
+#bmiForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+#bmiForm input {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.result-box {
+  margin-top: 14px;
+  padding: 12px;
+  border-radius: 12px;
+  background: var(--panel-strong);
+  line-height: 1.5;
+}
+
+.program-list {
+  padding-left: 18px;
+  margin-top: 10px;
+  line-height: 1.8;
+}
+
+@media (max-width: 900px) {
+  .hero,
+  .content-grid,
+  .stats-grid {
+    grid-template-columns: 1fr;
+    display: block;
+  }
+
+  .hero-card {
+    margin-top: 14px;
+  }
+
+  .stats-grid {
+    display: grid;
+  }
+}
