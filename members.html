@@ -22,39 +22,68 @@
 
 <h1>Data Member</h1>
 
+<div class="members-header">
+  <button id="addMemberBtn" class="btn">Tambah Member</button>
+</div>
+
+<div id="memberFormContainer" class="member-form-container">
+  <form id="memberForm" class="member-form">
+    <h2 id="formTitle">Tambah Member Baru</h2>
+
+    <label for="photo">URL Foto</label>
+    <input type="text" id="photo" placeholder="images/Abi.jpg" required>
+
+    <label for="memberId">ID Member</label>
+    <input type="text" id="memberId" placeholder="010325" required>
+
+    <label for="name">Nama</label>
+    <input type="text" id="name" placeholder="Abi" required>
+
+    <label for="package">Paket</label>
+    <select id="package">
+      <option value="Gold">Gold</option>
+      <option value="Silver">Silver</option>
+      <option value="Bronze">Bronze</option>
+    </select>
+
+    <label for="joinDate">Tanggal Join</label>
+    <input type="date" id="joinDate" required>
+
+    <label for="status">Status</label>
+    <select id="status" required>
+      <option value="Aktif">Aktif</option>
+      <option value="Expired">Expired</option>
+    </select>
+
+    <input type="hidden" id="memberIndex">
+    <input type="hidden" id="memberOriginalId">
+
+    <div class="form-actions">
+      <button type="submit" class="btn">Simpan</button>
+      <button type="button" id="cancelMemberBtn" class="btn btn-secondary">Batal</button>
+    </div>
+  </form>
+</div>
+
 <table>
-<tr>
-<th>Foto</th>
-<th>ID</th>
-<th>Nama</th>
-<th>Paket</th>
-<th>Tanggal Join</th>
-<th>Status</th>
-</tr>
-
-<tr>
-<td><img src="images/Abi.jpg"></td>
-<td>010325</td>
-<td><a href="detail_1.html">Abi</a></td>
-<td>Gold</td>
-<td>01-03-2025</td>
-<td class="aktif">Aktif</td>
-</tr>
-
-<tr>
-<td><img src="images/Gibran.jpg"></td>
-<td>101020</td>
-<td><a href="detail_2.html">Gibran</a></td>
-<td>Silver</td>
-<td>10-10-2020</td>
-<td class="expired">Expired</td>
-</tr>
-</table>
-
+  <thead>
+    <tr>
+      <th>Foto</th>
+      <th>ID</th>
+      <th>Nama</th>
+      <th>Paket</th>
+      <th>Tanggal Join</th>
+      <th>Status</th>
+      <th>Aksi</th>
+    </tr>
+  </thead>
+  <tbody id="memberTableBody"></tbody>
 </table>
 
 </div>
 </div>
+
+<script src="members.js"></script>
 
 </body>
 </html>

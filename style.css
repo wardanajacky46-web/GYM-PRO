@@ -193,7 +193,91 @@ text-decoration: none;
 border-radius: 10px;
 font-weight: bold;
 }
+/* MEMBERS CRUD */
+.members-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
 
+.member-form-container {
+  display: none;
+  margin-bottom: 24px;
+  background: rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 18px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+}
+
+.member-form-container.active {
+  display: block;
+}
+
+.member-form {
+  display: grid;
+  gap: 14px;
+}
+
+.member-form label {
+  font-size: 0.95rem;
+  color: #cbd5e1;
+}
+
+.member-form input,
+.member-form select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.18);
+  background: rgba(255,255,255,0.1);
+  color: white;
+}
+
+.member-form h2 {
+  margin-bottom: 8px;
+}
+
+.form-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn-secondary {
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.btn-small {
+  padding: 8px 10px;
+  border-radius: 10px;
+  font-size: 0.9rem;
+}
+
+.btn-edit {
+  background: #2563eb;
+  color: white;
+}
+
+.btn-delete {
+  background: #dc2626;
+  color: white;
+}
+
+.table-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.empty-row {
+  text-align: center;
+  padding: 24px 0;
+  color: #cbd5e1;
+}
 /* GRID TRAINER */
 .trainer-container {
 display: flex;
